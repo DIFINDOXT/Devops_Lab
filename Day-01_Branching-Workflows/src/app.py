@@ -4,7 +4,7 @@ def main():
     print("DevOps Practice App - Version 1.0.0")
 
 def authenticate_user(username, password):
-    if username == "admin" and password == "admin@123":
+    if username == "admin" and password == "secret":
         print("Login successful.")
         return True
     else:
