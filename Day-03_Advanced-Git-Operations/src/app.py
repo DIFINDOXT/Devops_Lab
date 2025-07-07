@@ -16,3 +16,14 @@ if __name__ == "__main__":
 
 Bug introduced here
 Temporary debug line
+import requests
+print('Starting API integration...')
+
+def fetch_external_data(url):
+    """Fetch data from external API"""
+    try:
+        response = requests.get(url, timeout=10)
+        return response.json()
+    except Exception as e:
+        print(f"API call failed: {e}")
+        return None
