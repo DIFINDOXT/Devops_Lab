@@ -14,3 +14,4 @@ def authenticate_user(username, password):
 if __name__ == "__main__":
     main()
 
+Bug introduced here
