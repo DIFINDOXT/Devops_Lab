@@ -3,7 +3,7 @@
 DevOps Git Mastery - Final Application
 Version: 1.0.0
 """
->
+
 import os
 import logging
 from datetime import datetime
@@ -27,3 +27,4 @@ if __name__ == "__main__":
     app = DevOpsApp()
     print(f"DevOps App v{app.version} - Final Mastery Demo")
     print(f"Status: {app.get_status()}")
+
