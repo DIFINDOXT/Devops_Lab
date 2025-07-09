@@ -1,0 +1,19 @@
+#!/bin/bash
+echo "📝 Post-commit hook triggered"
+
+# Get commit info
+commit_hash=$(git rev-parse HEAD)
+commit_message=$(git log -1 --pretty=%B)
+author=$(git log -1 --pretty=%an)
+files_changed=$(git diff-tree --no-commit-id --name-only -r HEAD)
+
+echo "🚀 Commit $commit_hash by $author completed"
+echo "📝 Message: $commit_message"
+echo "📁 Files changed: $files_changed"
+
+# Save to logs
+mkdir -p logs
+echo "$(date): $commit_hash - $commit_message" >> logs/commit.log
+
+# Simulate notification (e.g., to Slack or Teams)
+echo "📧 Notification sent to team about new commit"

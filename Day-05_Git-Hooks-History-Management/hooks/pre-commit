@@ -1,0 +1,45 @@
+#!/bin/bash
+echo "🔍 Running pre-commit checks..."
+
+# Check for Python syntax errors
+echo "Checking Python syntax..."
+python_files=$(git diff --cached --name-only --diff-filter=ACM | grep '\.py$')
+if [ ! -z "$python_files" ]; then
+    for file in $python_files; do
+        python3 -m py_compile "$file"
+        if [ $? -ne 0 ]; then
+            echo "❌ Python syntax error in $file"
+            exit 1
+        fi
+    done
+    echo "✅ Python syntax check passed"
+fi
+
+# Check for TODO/FIXME comments
+#echo "Checking for TODO/FIXME comments..."
+#if git diff --cached | grep -i "TODO\|FIXME\|HACK"; then
+##    echo "⚠️  Found TODO/FIXME/HACK comments in staged files"
+#    echo "Consider addressing these before committing"
+#    read -p "Continue anyway? (y/n): " -n 1 -r
+#    echo
+#    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+#        echo "❌ Commit aborted by user"
+#        exit 1
+#    fi
+#fi
+#
+# Check for large files
+echo "Checking for large files..."
+for file in $(git diff --cached --name-only); do
+    if [ -f "$file" ]; then
+        size=$(wc -c < "$file")
+        if [ $size -gt 1048576 ]; then  # 1MB
+            echo "❌ Large file detected: $file ($size bytes)"
+            echo "Consider using Git LFS for large files"
+            exit 1
+        fi
+    fi
+done
+
+echo "✅ All pre-commit checks passed!"
+exit 0
