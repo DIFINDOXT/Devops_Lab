@@ -1,13 +1,13 @@
 <p align="center">
   <!-- Social Badges -->
-  <a href="https://github.com/shubhadeepxt/DevopsLab/stargazers">
-    <img src="https://img.shields.io/github/stars/shubhadeepxt/DevopsLab?style=social" alt="⭐ Star this repository">
+  <a href="https://github.com/DIFINDOXT/Devops_Lab/stargazers">
+    <img src="https://img.shields.io/github/stars/DIFINDOXT/Devops_Lab?style=social" alt="⭐ Star this repository">
   </a>
-  <a href="https://github.com/shubhadeepxt/DevopsLab/network">
-    <img src="https://img.shields.io/github/forks/shubhadeepxt/DevopsLab?style=social" alt="🍴 Fork this repository">
+  <a href="https://github.com/DIFINDOXT/Devops_Lab/network">
+    <img src="https://img.shields.io/github/forks/DIFINDOXT/Devops_Lab?style=social" alt="🍴 Fork this repository">
   </a>
-  <a href="https://github.com/shubhadeepxt/DevopsLab/watchers">
-    <img src="https://img.shields.io/github/watchers/shubhadeepxt/DevopsLab?style=social" alt="👁️ Watch this repository">
+  <a href="https://github.com/DIFINDOXT/Devops_Lab/watchers">
+    <img src="https://img.shields.io/github/watchers/DIFINDOXT/Devops_Lab?style=social" alt="👁️ Watch this repository">
   </a>
 </p>
 
@@ -18,17 +18,6 @@
   <img src="https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge" alt="Made with Love">
 </p>
 
-<p align="center">
-  <a href="https://github.com/shubhadeepxt/DevopsLab/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/shubhadeepxt/DevopsLab" alt="License">
-  </a>
-  <a href="https://github.com/shubhadeepxt/DevopsLab/commits/main">
-    <img src="https://img.shields.io/github/last-commit/shubhadeepxt/DevopsLab" alt="Last commit">
-  </a>
-  <a href="https://github.com/shubhadeepxt/DevopsLab/issues">
-    <img src="https://img.shields.io/github/issues/shubhadeepxt/DevopsLab" alt="Issues">
-  </a>
-</p>
 
 # 🧪 DevopsLab Git Mastery – Hands-on Git Simulation Project
 
@@ -273,7 +262,18 @@ Coming Soon:
 ---
 
 ## 📈 Repository Stats
-Show Image
+
+<p align="center">
+  <a href="https://github.com/DIFINDOXT/Devops_Lab/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/DIFINDOXT/Devops_Lab" alt="License">
+  </a>
+  <a href="https://github.com/DIFINDOXT/Devops_Lab/commits/main">
+    <img src="https://img.shields.io/github/last-commit/DIFINDOXT/Devops_Lab" alt="Last commit">
+  </a>
+  <a href="https://github.com/DIFINDOXT/Devops_Lab/issues">
+    <img src="https://img.shields.io/github/issues/DIFINDOXT/Devops_Lab" alt="Issues">
+  </a>
+</p>
 
 ---
 
